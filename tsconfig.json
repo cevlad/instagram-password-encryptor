@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es2019"
+    ],
+    "declaration": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "target": "es2019",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "locale": "ru",
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "alwaysStrict": true,
+    "declarationMap": false,
+    "typeRoots": [
+      "./typings",
+      "./node_modules/@types/"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "./typings"
+  ],
+  "exclude": [
+    "node_modules",
+    "tests"
+  ]
+}
