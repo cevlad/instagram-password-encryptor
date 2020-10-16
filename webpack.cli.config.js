@@ -1,16 +1,12 @@
 const path = require("path");
 const ESLintPlugin = require("eslint-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const pkg = require("./package.json");
 
 module.exports = {
   mode: "production",
-  entry: "./src/index.ts",
+  entry: "./src/cli.ts",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index.js",
-    library: pkg.name,
-    libraryTarget: "umd",
+    filename: "cli.js",
   },
   resolve: {
     extensions: [".ts", ".js"],
@@ -22,12 +18,12 @@ module.exports = {
         enforce: "pre",
         loader: "ts-loader",
         options: {
-          configFile: "tsconfig.build.json",
+          configFile: "tsconfig.cli.json",
         },
       },
     ],
   },
-  plugins: [new CleanWebpackPlugin(), new ESLintPlugin()],
+  plugins: [new ESLintPlugin()],
   node: { global: true },
   target: "node",
 };

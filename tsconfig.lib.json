@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "removeComments": true,
+    "sourceMap": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "./typings"
+  ],
+  "exclude": [
+    "node_modules",
+    "tests",
+    "src/**/*.test.ts",
+    "src/cli.ts"
+  ]
+}
