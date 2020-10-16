@@ -26,6 +26,15 @@
     "encryption",
     "encryptor"
   ],
+  "homepage": "https://github.com/cevlad/instagram-password-encryptor#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cevlad/instagram-password-encryptor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cevlad/instagram-password-encryptor/issues",
+    "email": "cevladka@yandex.ru"
+  },
   "license": "ISC",
   "dependencies": {
     "blakejs": "^1.1.0",
