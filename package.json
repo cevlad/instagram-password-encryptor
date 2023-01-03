@@ -38,7 +38,7 @@
     "url": "https://github.com/cevlad/instagram-password-encryptor/issues",
     "email": "cevladka@yandex.ru"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "blakejs": "^1.1.0",
     "tweetnacl": "^1.0.3",
